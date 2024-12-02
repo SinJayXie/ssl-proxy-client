@@ -1,0 +1,22 @@
+{
+  "files": ["src/interface.ts"],
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "declarationMap": false,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "ES2015",
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.collection"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "./index.d.ts"
+  ]
+}

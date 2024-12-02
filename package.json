@@ -1,0 +1,34 @@
+{
+  "name": "ssl-proxy",
+  "version": "1.0.3",
+  "description": "",
+  "main": "build/interface.js",
+  "bin": "build/interface.js",
+  "scripts": {
+    "dev": "node dev/ts-dev-server.js",
+    "dev:proxy": "node dev/ts-dev-server.js --host=trojan.dishuyl.top --port=8082 --auth=dishuyl",
+    "build": "node dev/ts-build-script.js && pkg ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/pem": "^1.14.4",
+    "eslint": "^8.57.0",
+    "pem": "^1.14.8",
+    "pkg": "^5.8.1",
+    "tldts": "^6.1.64",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.9.0",
+    "uglify-js": "^3.19.3"
+  },
+  "pkg": {
+    "assets": [
+      "views/**/*"
+    ],
+    "targets": [
+      "node16-win-x64"
+    ],
+    "outputPath": "target"
+  },
+  "author": "",
+  "license": "ISC"
+}
