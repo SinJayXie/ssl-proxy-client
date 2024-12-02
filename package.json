@@ -6,7 +6,6 @@
   "bin": "build/interface.js",
   "scripts": {
     "dev": "node dev/ts-dev-server.js",
-    "dev:proxy": "node dev/ts-dev-server.js --host=trojan.dishuyl.top --port=8082 --auth=dishuyl",
     "build": "node dev/ts-build-script.js && pkg ."
   },
   "devDependencies": {
