@@ -1,4 +1,4 @@
 ### NORMAL Mode
 ``npm run dev``
 ### PROXY Mode
-``npm run dev --host=[host]``
+``npm run dev --host=[string] --port=[number] --auth=[string]``
